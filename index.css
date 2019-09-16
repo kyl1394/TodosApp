@@ -128,10 +128,13 @@ form {
     grid-area: lists;
 }
 
+.todo-list-container {
+    grid-area: active;
+}
+
 .todo-list {
     --spacer: 2rem;
 
-    grid-area: active;
     background: var(--clr-light);
     color: var(--clr-dark);
 }
@@ -239,9 +242,7 @@ form {
 .delete-task {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
     width: 100%;
-    left: 0;
-    bottom: -35px;
+    padding: 10px 0;
     color: var(--clr-light);
 }
